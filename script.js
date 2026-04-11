@@ -27,3 +27,25 @@ heartButtons.forEach(button => {
     });
 });
 
+
+
+
+let coins = 100; 
+
+function showCallAlert(serviceName, serviceNumber) {
+    // Show an alert with a message including the service name and number
+        alert("Calling: " + serviceName + "\nNumber: " + serviceNumber);
+
+    // Check if user has not enough coins make a alert
+    if (coins < 20) {
+        alert("You do not have enough coins to make this call!");
+        return; // Terminate the process
+    }
+
+    // Deduct coins and update Navbar
+    coins -= 20;
+    document.getElementById('coin-count').innerText = coins;
+
+    // Trigger the second function (Updating the second ID)
+    addToHistory(serviceName, serviceNumber);
+}
