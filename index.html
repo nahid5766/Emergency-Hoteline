@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Hotline</title>
+<!-- tailwindcss cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="mx-auto">
+    <!-- navbar start -->
+         <header class="relative py-3 w-full">
+          <div class="container flex justify-between items-center">
+               <!-- gov.logo & text------------- -->
+               <div class="div_01 flex items-center ml-15">
+                         <img src="./asset/logo.png" class="h-[50px]" alt="">
+
+                     <div class="ml-2 text-2xl text-shadow-gray-500 font-bold text-[#006747] text-shadow-black-500">
+                           <h1>Emergency</h1>
+                           <h1>Service</h1>
+                    </div>
+               </div>
+
+
+               <nav class="parent flex justify-between items-center mr-15">
+                    <!-- Mobile Hamburger Menu_button---------------- -->
+                    <button id="menu_button" class="text-black flex text-end    sm:hidden">
+                      <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-7"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+              />
+                      </svg>
+                    </button>
+                    <!-- button area---------------- -->
+                    <div id="menu_area" 
+                    class="<!-- Mobile Styles  -->
+                    absolute left-0 top-[70px] w-full p-5 gap-3 
+                    flex flex-row items-center justify-center 
+                    bg-white shadow-md z-50 hidden
+
+                    <!-- Tablet/Desktop Styles  -->
+                    md:flex md:flex-row md:static md:w-auto md:p-0 md:shadow-none md:justify-end md:ml-auto
+                    ">
+                         <!-- Love Button -->
+                         <button class="text-black text-[24px] font-bold bg-[#41FF6B]/10 w-[123px] h-[52px] gap-3 rounded-3xl flex items-center justify-center">
+                              <span id="favorite-count">0</span>
+                              <img src="/asset/heart.png" class="class= w-[30px] h-[30px]" alt="">
+                         </button>
+
+                         <!-- Coin Button -->
+                         <button class="text-black text-[24px] font-bold bg-[#41FF6B]/10 w-[123px] h-[52px] gap-3 rounded-3xl flex items-center justify-center">
+                              <span id="coin-count">100</span>
+                              <img src="/asset/coin.png" class="w-[30px] h-[30px]" alt="">
+                         </button>
+                         <!-- copy Button -->
+                         <button class=" text-white font-bold bg-[#00A63E] w-[127px] h-[52px] rounded-3xl shadow-xl">
+                              <span id="copy-count">0</span>
+                              Copy</button>
+                    </div>
+               </nav>
+          </div>
+     </header>
+    <!-- navbar end -->
+
+</body>
+</html>
