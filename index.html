@@ -88,5 +88,334 @@
      </section>
 <!-- Hero Section End -->
 
+
+
+<!-- Card & History -->
+     <div class="container_div bg-[#f5fff6] mx-auto w-full mx-auto flex flex-col justify-between ">
+
+<!-- card section -->
+               <div class="Parent_div grid grid-cols-1 gap-3 mx-auto mt-10
+                    md:grid-cols-2 md:gap-3 lg:grid-cols-3 lg:gap-5">
+
+                         <!-- Card no - 01 -->
+                         <div class="child_div h-[350px] p-5 bg-white rounded-2xl  shadow-md">
+                              <div class="Child_div flex justify-between items-center">
+                              <!-- pink color Rectangle-->
+                                   <div class="w-[60px] h-[60px] bg-pink-100 rounded-2xl flex items-center justify-center">
+                                        <img src="/asset/emergency.png" class="w-[32px] h-[32px] flex items-center" alt="">
+                                   </div>
+                                   <!-- Love icon svg link -->
+                                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="heart-btn size-6">
+                                   <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                   </svg>
+                              </div>
+                              <h1 class="mt-5 text-xl font-bold">National Emergency Number</h1>
+                              <p class="text-[#5C5C5C]">National Emergency</p>
+                              <h1 class="text-3xl font-bold mt-7">999</h1>
+                              <div class="mt-2 bg-[#F3F4F4] w-[50px] h-[30px] rounded-2xl flex items-center justify-center">
+                                   <p>All</p>
+                              </div>
+
+                              <div class="mt-5 flex gap-2 items-center">
+                                   <!-- Copy Button -->
+                                   <button onclick="handleCopy('999')" class="w-[182px] h-[40px] border-1 border-gray-500 font-bold text-gray-500 flex items-center justify-center rounded-xl">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-1">
+                                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                                        </svg>
+                                   Copy</button>
+                                   <!--call Button  -->
+                                   <button id="addToHistory" onclick="showCallAlert('National Emergency Number', '999')" class="w-[182px] h-[40px] bg-[#00A63E] text-white font-bold flex items-center justify-center rounded-xl">
+                                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-5 mr-1">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                                   </svg>
+                                   Call</button>
+                              </div>
+                         </div>
+
+                         <!-- Card no - 02 -->
+                         <div class="Parent_div  h-[350px] p-5 bg-white rounded-2xl shadow-md">
+                              <div class="Child_div flex justify-between items-center">
+                              <!-- pink color Rectangle-->
+                                   <div class="w-[60px] h-[60px] bg-[#DFEFFF] rounded-2xl flex items-center justify-center">
+                                        <img src="/asset/police.png" class="w-[32px] h-[32px] flex items-center" alt="">
+                                   </div>
+                                   <!-- Love icon svg link -->
+                                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="heart-btn size-6">
+                                   <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                   </svg>
+                              </div>
+                              <h1 class="mt-5 text-xl font-bold">Police Helpline Number</h1>
+                              <p class="text-[#5C5C5C]">Police</p>
+                              <h1 class="text-3xl font-bold mt-7">999</h1>
+                              <div class="mt-2 bg-[#F3F4F4] w-[65px] h-[30px] rounded-2xl flex items-center justify-center">
+                                   <p>Police</p>
+                              </div>
+
+                              <div class="mt-5 flex gap-2 items-center">
+                                   <!-- Copy Button -->
+                                   <button onclick="handleCopy('999')" class="w-[182px] h-[40px] border-1 border-gray-500 font-bold text-gray-500  flex items-center justify-center rounded-xl">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-1">
+                                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                                        </svg>
+                                   Copy</button>
+                                   <!--call Button  -->
+                                   <button onclick="showCallAlert('Police Helpline Number', '999')"
+                                   class="w-[182px] h-[40px] bg-[#00A63E] text-white font-bold flex items-center justify-center rounded-xl">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-5 mr-1">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                                        </svg>
+                                   Call</button>
+                              </div>
+                         </div>
+
+                         <!-- Card no - 03 -->
+                         <div class="Parent_div w-[436px] h-[350px] p-5 bg-white rounded-2xl shadow-md">
+                              <div class="Child_div flex justify-between items-center">
+                              <!-- pink color Rectangle-->
+                                   <div class="w-[60px] h-[60px] bg-pink-100 rounded-2xl flex items-center justify-center">
+                                        <img src="/asset/fire-service.png" class="w-[32px] h-[32px] flex items-center" alt="">
+                                   </div>
+                                   <!-- Love icon svg link -->
+                                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="heart-btn size-6">
+                                   <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                   </svg>
+                              </div>
+                              <h1 class="mt-5 text-xl font-bold">Fire Service Number</h1>
+                              <p class="text-[#5C5C5C]">Fire Service</p>
+                              <h1 class="text-3xl font-bold mt-7">999</h1>
+                              <div class="mt-2 bg-[#F3F4F4] w-[50px] h-[30px] rounded-2xl flex items-center justify-center">
+                                   <p>Fire</p>
+                              </div>
+
+                              <div class="mt-5 flex gap-2 items-center">
+                                   <!-- Copy Button -->
+                                   <button onclick="handleCopy('999')" class="w-[182px] h-[40px] border-1 border-gray-500 font-bold text-gray-500  flex items-center justify-center rounded-xl">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-1">
+                                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                                        </svg>
+                                   Copy</button>
+                                   <!--call Button  -->
+                                   <button onclick="showCallAlert('Fire Service Number', '999')"
+                                   class="w-[182px] h-[40px] bg-[#00A63E] text-white font-bold flex items-center justify-center rounded-xl">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-5 mr-1">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                                        </svg>
+                                   Call</button>
+                              </div>
+                         </div>
+
+                         <!-- Card no - 04 -->
+                         <div class="Parent_div w-[436px] h-[350px] p-5 bg-white rounded-2xl shadow-md">
+                              <div class="Child_div flex justify-between items-center">
+                              <!-- pink color Rectangle-->
+                                   <div class="w-[60px] h-[60px] bg-pink-100 rounded-2xl flex items-center justify-center">
+                                        <img src="/asset/ambulance.png" class="w-[32px] h-[32px] flex items-center" alt="">
+                                   </div>
+                                   <!-- Love icon svg link -->
+                                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="heart-btn size-6">
+                                   <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                   </svg>
+                              </div>
+                              <h1 class="mt-5 text-xl font-bold">Ambulance Service</h1>
+                              <p class="text-[#5C5C5C]">Ambulance</p>
+                              <h1 class="text-3xl font-bold mt-7">1994-999999</h1>
+                              <div class="mt-2 bg-[#F3F4F4] w-[65px] h-[30px] rounded-2xl flex items-center justify-center">
+                                   <p>Health</p>
+                              </div>
+
+                              <div class="mt-5 flex gap-2 items-center">
+                                   <!-- Copy Button -->
+                                   <button onclick="handleCopy('1994-999999')" class="w-[182px] h-[40px] border-1 border-gray-500 font-bold text-gray-500  flex items-center justify-center rounded-xl">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-1">
+                                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                                        </svg>
+                                   Copy</button>
+                                   <!--call Button  -->
+                                   <button onclick="showCallAlert('Ambulance Service', '1994-999999')"
+                                   class="w-[182px] h-[40px] bg-[#00A63E] text-white font-bold flex items-center justify-center rounded-xl">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-5 mr-1">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                                        </svg>
+                                   Call</button>
+                              </div>
+                         </div>
+                         <!-- Card no - 05 -->
+                         <div class="Parent_div w-[436px] h-[350px] p-5 bg-white rounded-2xl shadow-md">
+                              <div class="Child_div flex justify-between items-center">
+                              <!-- pink color Rectangle-->
+                                   <div class="w-[60px] h-[60px] bg-pink-100 rounded-2xl flex items-center justify-center">
+                                        <img src="/asset/emergency.png" class="w-[32px] h-[32px] flex items-center" alt="">
+                                   </div>
+                                   <!-- Love icon svg link -->
+                                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="heart-btn size-6">
+                                   <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                   </svg>
+                              </div>
+                              <h1 class="mt-5 text-xl font-bold">Women & Child Helpline</h1>
+                              <p class="text-[#5C5C5C]">Women & Child Helpline</p>
+                              <h1 class="text-3xl font-bold mt-7">109</h1>
+                              <div class="mt-2 bg-[#F3F4F4] w-[50px] h-[30px] rounded-2xl flex items-center justify-center">
+                                   <p>Help</p>
+                              </div>
+
+                              <div class="mt-5 flex gap-2 items-center">
+                                   <!-- Copy Button -->
+                                   <button onclick="handleCopy('109')" class="w-[182px] h-[40px] border-1 border-gray-500 font-bold text-gray-500  flex items-center justify-center rounded-xl">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-1">
+                                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                                        </svg>
+                                   Copy</button>
+                                   <!--call Button  -->
+                                   <button onclick="showCallAlert('Women & Child Helpline', '109')"
+                                   class="w-[182px] h-[40px] bg-[#00A63E] text-white font-bold flex items-center justify-center rounded-xl">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-5 mr-1">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                                        </svg>
+                                   Call</button>
+                              </div>
+                         </div>
+                         <!-- Card no - 06 -->
+                         <div class="Parent_div w-[436px] h-[350px] p-5 bg-white rounded-2xl shadow-md">
+                              <div class="Child_div flex justify-between items-center">
+                              <!-- pink color Rectangle-->
+                                   <div class="w-[60px] h-[60px] bg-pink-100 rounded-2xl flex items-center justify-center">
+                                        <img src="/asset/emergency.png" class="w-[32px] h-[32px] flex items-center" alt="">
+                                   </div>
+                                   <!-- Love icon svg link -->
+                                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="heart-btn size-6">
+                                   <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                   </svg>
+                              </div>
+                              <h1 class="mt-5 text-xl font-bold">Anti-Corruption Helpline</h1>
+                              <p class="text-[#5C5C5C]">Anti-Corruption</p>
+                              <h1 class="text-3xl font-bold mt-7">106</h1>
+                              <div class="mt-2 bg-[#F3F4F4] w-[60px] h-[30px] rounded-2xl flex items-center justify-center">
+                                   <p>Govt.</p>
+                              </div>
+
+                              <div class="mt-5 flex gap-2 items-center">
+                                   <!-- Copy Button -->
+                                   <button onclick="handleCopy('106')" class="w-[182px] h-[40px] border-1 border-gray-500 font-bold text-gray-500  flex items-center justify-center rounded-xl">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-1">
+                                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                                        </svg>
+                                   Copy</button>
+                                   <!--call Button  -->
+                                   <button onclick="showCallAlert('Anti-Corruption Helpline', '106')"
+                                   class="w-[182px] h-[40px] bg-[#00A63E] text-white font-bold flex items-center justify-center rounded-xl">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-5 mr-1">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                                        </svg>
+                                   Call</button>
+                              </div>
+                         </div>
+                         <!-- Card no - 07 -->
+                         <div class="Parent_div w-[436px] h-[350px] p-5 bg-white rounded-2xl shadow-md">
+                              <div class="Child_div flex justify-between items-center">
+                              <!-- pink color Rectangle-->
+                                   <div class="w-[60px] h-[60px] bg-pink-100 rounded-2xl flex items-center justify-center">
+                                        <img src="/asset/emergency.png" class="w-[32px] h-[32px] flex items-center" alt="">
+                                   </div>
+                                   <!-- Love icon svg link -->
+                                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="heart-btn size-6">
+                                   <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                   </svg>
+                              </div>
+                              <h1 class="mt-5 text-xl font-bold">Electricity Helpline</h1>
+                              <p class="text-[#5C5C5C]">Electricity Outage</p>
+                              <h1 class="text-3xl font-bold mt-7">16216</h1>
+                              <div class="mt-2 bg-[#F3F4F4] w-[90px] h-[30px] rounded-2xl flex items-center justify-center">
+                                   <p>Electricity</p>
+                              </div>
+
+                              <div class="mt-5 flex gap-2 items-center">
+                                   <!-- Copy Button -->
+                                   <button onclick="handleCopy('16216')" class="w-[182px] h-[40px] border-1 border-gray-500 font-bold text-gray-500  flex items-center justify-center rounded-xl">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-1">
+                                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                                        </svg>
+                                   Copy</button>
+                                   <!--call Button  -->
+                                   <button onclick="showCallAlert('Electricity Helpline', '16216')"
+                                   class="w-[182px] h-[40px] bg-[#00A63E] text-white font-bold flex items-center justify-center rounded-xl">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-5 mr-1">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                                        </svg>
+                                   Call</button>
+                              </div>
+                         </div>
+                         <!-- Card no - 08 -->
+                         <div class="Parent_div w-[436px] h-[350px] p-5 bg-white rounded-2xl shadow-md">
+                              <div class="Child_div flex justify-between items-center">
+                              <!-- pink color Rectangle-->
+                                   <div class="w-[60px] h-[60px] bg-pink-100 rounded-2xl flex items-center justify-center">
+                                        <img src="/asset/emergency.png" class="w-[32px] h-[32px] flex items-center" alt="">
+                                   </div>
+                                   <!-- Love icon svg link -->
+                                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="heart-btn size-6">
+                                   <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                   </svg>
+                              </div>
+                              <h1 class="mt-5 text-xl font-bold">Brac Helpline</h1>
+                              <p class="text-[#5C5C5C]">Brac</p>
+                              <h1 class="text-3xl font-bold mt-7">16445</h1>
+                              <div class="mt-2 bg-[#F3F4F4] w-[50px] h-[30px] rounded-2xl flex items-center justify-center">
+                                   <p>NGO</p>
+                              </div>
+
+                              <div class="mt-5 flex gap-2 items-center">
+                                   <!-- Copy Button -->
+                                   <button onclick="handleCopy('16445')" class="w-[182px] h-[40px] border-1 border-gray-500 font-bold text-gray-500  flex items-center justify-center rounded-xl">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-1">
+                                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                                        </svg>
+                                   Copy</button>
+                                   <!--call Button  -->
+                                   <button onclick="showCallAlert('Brac Helpline', '16445')"
+                                   class="w-[182px] h-[40px] bg-[#00A63E] text-white font-bold flex items-center justify-center rounded-xl">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-5 mr-1">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                                        </svg>
+                                   Call</button>
+                              </div>
+                         </div>
+                         <!-- Card no - 09 -->
+                         <div class="Parent_div w-[436px] h-[350px] p-5 bg-white rounded-2xl shadow-md">
+                              <div class="Child_div flex justify-between items-center">
+                              <!-- pink color Rectangle-->
+                                   <div class="w-[60px] h-[60px] bg-pink-100 rounded-2xl flex items-center justify-center">
+                                        <img src="/asset/emergency.png" class="w-[32px] h-[32px] flex items-center" alt="">
+                                   </div>
+                                   <!-- Love icon svg link -->
+                                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="heart-btn size-6">
+                                   <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                   </svg>
+                              </div>
+                              <h1 class="mt-5 text-xl font-bold">Bangladesh Railway Helpline</h1>
+                              <p class="text-[#5C5C5C]">Bangladesh Railway</p>
+                              <h1 class="text-3xl font-bold mt-7">163</h1>
+                              <div class="mt-2 bg-[#F3F4F4] w-[65px] h-[30px] rounded-2xl flex items-center justify-center">
+                                   <p>Travel</p>
+                              </div>
+
+                              <div class="mt-5 flex gap-2 items-center">
+                                   <!-- Copy Button -->
+                                   <button onclick="handleCopy('163')" class="w-[182px] h-[40px] border-1 border-gray-500 font-bold text-gray-500  flex items-center justify-center rounded-xl">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-1">
+                                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                                        </svg>
+                                   Copy</button>
+                                   <!--call Button  -->
+                                   <button onclick="showCallAlert('Bangladesh Railway Helpline', '163')"
+                                   class="w-[182px] h-[40px] bg-[#00A63E] text-white font-bold flex items-center justify-center rounded-xl">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-5 mr-1">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                                        </svg>
+                                   Call</button>
+                              </div>
+                         </div>
+               </div>
+     </div>
+
 </body>
 </html>
