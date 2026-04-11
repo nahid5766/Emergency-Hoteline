@@ -8,6 +8,9 @@ menu_button.addEventListener("click", function() {
 
 
 
+
+
+
 // Love btn counter (Function)
 let count = 0;
 
@@ -26,6 +29,9 @@ heartButtons.forEach(button => {
         console.log(`Favorites updated: ${count}`);
     });
 });
+
+
+
 
 
 
@@ -50,6 +56,7 @@ function showCallAlert(serviceName, serviceNumber) {
     addToHistory(serviceName, serviceNumber);
 }
 
+
 function addToHistory(name, number) {
     const historyContainer = document.getElementById('history-container');
     const currentTime = new Date().toLocaleTimeString();
@@ -69,3 +76,16 @@ function addToHistory(name, number) {
     // Add it to the top of the history list
     historyContainer.prepend(historyItem);
 }
+
+
+
+
+
+// Clicking this button will remove all data from call history
+function clearHistory(){
+    // Find the container that holds all the history cards
+    const historyContainer = document.getElementById('history-container')
+    // empty string
+    historyContainer.innerHTML = '';
+}
+
