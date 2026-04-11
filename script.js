@@ -89,3 +89,22 @@ function clearHistory(){
     historyContainer.innerHTML = '';
 }
 
+
+
+
+
+// use clipboard for copy text and past anywhere
+let copies = 0;
+
+function handleCopy(serviceNumber) {
+    // Copy the number
+    navigator.clipboard.writeText(serviceNumber).then(() => {
+        copies++;
+        document.getElementById('copy-count').innerText = copies;
+
+        // Show alert 
+        alert(`Number ${serviceNumber} copied!`);
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
+}
