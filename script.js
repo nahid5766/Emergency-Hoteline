@@ -49,3 +49,23 @@ function showCallAlert(serviceName, serviceNumber) {
     // Trigger the second function (Updating the second ID)
     addToHistory(serviceName, serviceNumber);
 }
+
+function addToHistory(name, number) {
+    const historyContainer = document.getElementById('history-container');
+    const currentTime = new Date().toLocaleTimeString();
+
+    // Create the history card HTML
+    const historyItem = document.createElement('div');
+    historyItem.className = "bg-gray-100 p-3 rounded-lg mt-5 flex justify-between items-center";
+    
+    historyItem.innerHTML = `
+        <div>
+            <p class="font-bold text-sm">${name}</p>
+            <p class="text-xs text-gray-500">${number}</p>
+        </div>
+        <p class="text-xs text-gray-400">${currentTime}</p>
+    `;
+
+    // Add it to the top of the history list
+    historyContainer.prepend(historyItem);
+}
