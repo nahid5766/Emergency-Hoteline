@@ -415,6 +415,22 @@
                               </div>
                          </div>
                </div>
+               <!-- Call History -->
+               <div class="child_div w-[440px] mx-auto p-3 bg-white rounded-lg shadow-md mt-10">
+                    <!-- call history heading -->
+                         <div class="flex items-center justify-between">
+                              <div class="flex">
+                                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>
+                              <h1 class="font-bold ml-3">Call History</h1>
+                              </div>                            
+                              <button onclick="clearHistory()"
+                              class="w-[114px] h-[52px] bg-[#00A63E] rounded-3xl text-white font-bold">Clear</button>
+                         </div>
+<!-- call history token -->
+                     <div id="history-container"></div>
+               </div> 
      </div>
 
 </body>
