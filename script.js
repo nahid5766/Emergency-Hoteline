@@ -35,7 +35,7 @@ heartButtons.forEach(button => {
 
 
 
-
+// coin count fn
 let coins = 100; 
 
 function showCallAlert(serviceName, serviceNumber) {
